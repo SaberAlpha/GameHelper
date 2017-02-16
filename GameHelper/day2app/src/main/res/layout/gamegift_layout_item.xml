@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/game_icon_gamegift"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="12dp" />
+
+    <TextView
+        android:id="@+id/game_name_gamegift"
+        android:layout_toRightOf="@id/game_icon_gamegift"
+        android:layout_alignTop="@id/game_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_text1_gamegift"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/game_icon_gamegift"
+        />
+
+    <TextView
+        android:layout_toRightOf="@id/game_icon_gamegift"
+        android:id="@+id/game_text2_gamegift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignBottom="@id/game_icon_gamegift"
+        android:text="text" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:focusable="false"
+        android:text="免费领取"
+        android:textColor="#2F97FE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

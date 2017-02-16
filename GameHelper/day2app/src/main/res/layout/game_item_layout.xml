@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+     android:layout_centerVertical="true"
+        android:id="@+id/game_icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+       android:layout_margin="12dp" />
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_toRightOf="@id/game_icon"
+        android:layout_alignTop="@id/game_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="text" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:progressDrawable="@drawable/ratingbar"
+        android:id="@+id/game_ratingBar"
+        android:isIndicator="true"
+        android:max="10"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/game_icon"
+        />
+
+    <TextView
+        android:layout_toRightOf="@id/game_icon"
+        android:id="@+id/game_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+       android:layout_alignBottom="@id/game_icon"
+        android:text="text" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:drawableTop="@drawable/game_load"
+        android:text="奖4,850U币"
+        android:focusable="false"
+        android:textColor="#2F97FE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

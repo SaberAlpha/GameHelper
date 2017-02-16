@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GameHelper.iml" filepath="$PROJECT_DIR$/GameHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day2app/day2app.iml" filepath="$PROJECT_DIR$/day2app/day2app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamemessageitem3/gamemessageitem3.iml" filepath="$PROJECT_DIR$/gamemessageitem3/gamemessageitem3.iml" />
+    </modules>
+  </component>
+</project>

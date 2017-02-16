@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gamefragmet_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/game_back"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_back"
+            android:background="@null"/>
+      <android.support.v7.widget.SearchView
+          android:id="@+id/game_search"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+            android:queryHint="搜游戏"
+          android:background="@drawable/game_search_shape">
+
+      </android.support.v7.widget.SearchView>
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:padding="10dp"
+            android:button="@null"
+            android:layout_margin="10dp"
+            android:id="@+id/game_button1"
+            android:checked="true"
+            android:gravity="center"
+            android:background="@drawable/game_button_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="全部游戏"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:padding="10dp"
+            android:button="@null"
+            android:layout_margin="10dp"
+            android:id="@+id/game_button2"
+            android:gravity="center"
+            android:background="@drawable/game_button_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="未试玩"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:padding="10dp"
+            android:button="@null"
+            android:layout_margin="10dp"
+            android:id="@+id/game_button3"
+            android:gravity="center"
+            android:background="@drawable/game_button_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="已试玩"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

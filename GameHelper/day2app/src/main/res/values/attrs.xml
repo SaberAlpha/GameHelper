@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomMenu">
+        <attr name="menu_text" format="string" />
+        <attr name="menu_icon_normal" format="reference" />
+        <attr name="menu_icon_selected" format="reference" />
+    </declare-styleable>
+</resources>

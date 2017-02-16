@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/gamemessage_background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@mipmap/bg_guide_02"
+        />
+    <LinearLayout
+        android:id="@+id/gamemessage_firstlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/gamemessage_headview"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:padding="5dp"
+        >
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/game_back_gamemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_back"
+            android:background="@null"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏详情"/>
+        <ImageButton
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/game_share_gamemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vj_share_toolbar"
+            android:background="@null"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/gamemessage_secendlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        <ImageView
+
+            android:id="@+id/gamemessage_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="190dp"
+            android:src="@mipmap/bg_guide_02"/>
+      <RelativeLayout
+          android:layout_alignParentBottom="true"
+          android:layout_width="match_parent"
+          android:layout_height="80dp">
+          <ImageView
+              android:layout_centerVertical="true"
+              android:id="@+id/gamemessage_icon"
+              android:layout_width="72dp"
+              android:layout_height="72dp"
+              android:src="@mipmap/logo"
+              android:layout_margin="12dp" />
+
+          <TextView
+              android:textSize="18sp"
+              android:textColor="#fff"
+              android:id="@+id/gamemessage_name"
+              android:layout_toRightOf="@id/gamemessage_icon"
+              android:layout_alignTop="@id/gamemessage_icon"
+              android:layout_width="wrap_content"
+              android:layout_height="20dp"
+              android:text="text" />
+
+          <RatingBar
+              android:layout_width="wrap_content"
+              android:layout_height="20dp"
+
+              android:progressDrawable="@drawable/ratingbar"
+              android:id="@+id/gamemessage_ratingBar"
+              android:isIndicator="true"
+              android:max="10"
+              android:stepSize="0.5"
+              android:numStars="5"
+              android:layout_below="@id/gamemessage_name"
+
+              android:layout_toRightOf="@+id/gamemessage_icon"
+              />
+
+          <TextView
+              android:layout_toRightOf="@id/gamemessage_icon"
+              android:id="@+id/gamemessage_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dp"
+              android:layout_alignBottom="@id/gamemessage_icon"
+              android:text="text" />
+             </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/gamemessage_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:layout_margin="10dp"
+                    android:id="@+id/game_button1_message"
+                    android:checked="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:background="@drawable/game_button_color"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="游戏信息"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:layout_margin="10dp"
+                    android:id="@+id/game_button2_message"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:background="@drawable/game_button_color"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="游戏礼包"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:layout_margin="10dp"
+                    android:id="@+id/game_button3_message"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:background="@drawable/game_button_color"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="常见问题"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/gamemessage_container"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </FrameLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/gamemessage_button1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gamemessage_button_selector"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="刷新"
+                android:focusable="false"
+                android:textColor="#fff"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/gamemessage_button2"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gamemessage_button_selector"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:focusable="false"
+                android:textSize="18sp"
+                android:text="下载"
+                android:textColor="#fff"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

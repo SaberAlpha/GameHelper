@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="72dp"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.qianfeng.gamehelper.widget.BottomMenu
+            android:id="@+id/bm_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_icon_normal="@mipmap/icon_home"
+            app:menu_icon_selected="@mipmap/icon_home_hover"
+            app:menu_text="首页" />
+
+        <com.qianfeng.gamehelper.widget.BottomMenu
+            android:id="@+id/bm_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_icon_normal="@mipmap/ic_menu_01_nor"
+            app:menu_icon_selected="@mipmap/ic_menu_01_hl"
+            app:menu_text="游戏" />
+
+        <com.qianfeng.gamehelper.widget.BottomMenu
+            android:id="@+id/bm_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_icon_normal="@mipmap/ic_menu_04_nor"
+            app:menu_icon_selected="@mipmap/ic_menu_04_hl"
+            app:menu_text="商城" />
+
+        <com.qianfeng.gamehelper.widget.BottomMenu
+            android:id="@+id/bm_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_icon_normal="@mipmap/ic_menu_05_nor"
+            app:menu_icon_selected="@mipmap/ic_menu_05_hl"
+            app:menu_text="我的" />
+    </LinearLayout>
+</RelativeLayout>

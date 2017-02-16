@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/shop_image_left"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+
+            />
+        <TextView
+
+            android:layout_below="@id/shop_image_left"
+            android:id="@+id/shop_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shop_remian_left"
+            android:layout_below="@id/shop_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shop_U_left"
+            android:layout_below="@id/shop_remian_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFB746"/>
+        <TextView
+
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#74AD20"
+            android:background="@drawable/shape_duihuan"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:text="兑换"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/shop_image_right"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+
+            />
+        <TextView
+            android:layout_below="@id/shop_image_right"
+            android:id="@+id/shop_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shop_remian_right"
+            android:layout_below="@id/shop_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shop_U_right"
+            android:layout_below="@id/shop_remian_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFB746"/>
+        <TextView
+
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#74AD20"
+            android:background="@drawable/shape_duihuan"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:text="兑换"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

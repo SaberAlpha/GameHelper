@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="积分商城"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#207FB7">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额:1,200U币"/>
+
+        <TextView
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+           android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="#1C73A0"
+            android:text="兑换记录"
+           android:drawableRight="@mipmap/ic_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list_view_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/gamemessage_headview"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/back_biggift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_back"
+            android:background="@null"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼包详情"/>
+        <ImageButton
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/biggift_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/vj_share_toolbar"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@mipmap/bg_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+
+            android:id="@+id/biggift_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/logo"
+            android:layout_margin="12dp" />
+
+        <TextView
+            android:id="@+id/biggift_name"
+            android:layout_toRightOf="@id/biggift_icon"
+            android:layout_alignTop="@id/biggift_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:text="text" />
+
+        <ProgressBar
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/biggift_progressBar"
+            android:layout_below="@id/biggift_name"
+            android:layout_toRightOf="@+id/biggift_icon"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/biggift_icon"
+            android:id="@+id/biggift_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_alignBottom="@id/biggift_icon"
+            android:text="text" />
+        <TextView
+            android:gravity="center"
+            android:layout_below="@id/biggift_text2"
+            android:layout_toRightOf="@id/biggift_icon"
+            android:id="@+id/biggift_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/ic_app"
+            android:layout_marginTop="2dp"
+            android:text="适用于:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:id="@+id/biggift_textView"
+            android:layout_alignBottom="@+id/biggift_progressBar"
+            android:layout_toRightOf="@+id/biggift_progressBar"
+            android:layout_toEndOf="@+id/biggift_progressBar" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="0U币"
+            android:id="@+id/textView"
+            android:background="@drawable/gamemessage_button_selector"
+            android:layout_below="@+id/biggift_icon"
+            android:layout_alignLeft="@+id/biggift_icon"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="#0ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/biggift_sizetyte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        <Button
+           android:id="@+id/biggift_button3"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="下载游戏"
+            android:background="@drawable/gamemessage_button_selector"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼包内容"
+        />
+    <TextView
+        android:id="@+id/biggift_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼包内容"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="领取方式"
+        />
+    <TextView
+        android:id="@+id/biggift_way"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼包内容"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/biggift_taohao"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="淘号"
+            android:background="@drawable/gamemessage_button_selector"/>
+
+    </RelativeLayout>
+</LinearLayout>

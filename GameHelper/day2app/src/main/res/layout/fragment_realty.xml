@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/realty_back"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_back"
+            android:background="@null"/>
+      <TextView
+          android:layout_marginTop="5dp"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:textSize="30sp"
+          android:layout_height="wrap_content"
+          android:text="实物兑换"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/realty_radiogroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:padding="10dp"
+                android:button="@null"
+                android:layout_margin="10dp"
+                android:id="@+id/realty_button1"
+                android:checked="true"
+                android:gravity="center"
+                android:background="@drawable/game_button_color"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="数码产品"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:padding="10dp"
+                android:button="@null"
+                android:layout_margin="10dp"
+                android:id="@+id/realty_button2"
+                android:gravity="center"
+                android:background="@drawable/game_button_color"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="游戏相关"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:padding="10dp"
+                android:button="@null"
+                android:layout_margin="10dp"
+                android:id="@+id/realty_button3"
+                android:gravity="center"
+                android:background="@drawable/game_button_color"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="居家生活"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout_realty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/list_view_realty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
